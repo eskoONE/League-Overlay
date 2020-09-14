@@ -27,16 +27,15 @@ If !pToken := Gdip_Startup()
 	}
 OnExit, Exit
 
-global image1 := "Syndicate.png"
-global image2 := "Incursion.png"
-global image3 := "Map.png"
-global image4 := "Fossil.png"
+global image1 := "polus.png"
+global image2 := "theskeld.png"
+global image3 := "mirahq.png"
 global GuiOn1 := 0
 global GuiOn2 := 0
 global GuiOn3 := 0
 global GuiOn4 := 0
 
-global poeWindowName = "Path of Exile ahk_class POEWindowClass"
+global poeWindowName = "Among Us ahk_class UnityWndClass"
 
 ; Create a layered window (+E0x80000 : must be used for UpdateLayeredWindow to work!) that is always on top (+AlwaysOnTop), has no taskbar entry or caption
 
@@ -133,8 +132,8 @@ Loop 4
 }
 Return
 
-#IfWinActive Path of Exile
-f2::
+#IfWinActive Among Us
+f1::
 If (GuiON1 = 1) {
 Gui, 1: Hide
 GuiON1 := 0
@@ -146,7 +145,7 @@ GuiON1 := 1
 }
 return
 
-f3::
+f2::
 If (GuiON2 = 1) {
 Gui, 2: Hide
 GuiON2 := 0
@@ -158,7 +157,7 @@ GuiON2 := 1
 }
 return
 
-f4::
+f3::
 If (GuiON3 = 1) {
 Gui, 3: Hide
 GuiON3 := 0
@@ -169,19 +168,6 @@ Gui, 3: Show, NA
 GuiON3 := 1
 }
 return
-
-f6::
-If (GuiON4 = 1) {
-Gui, 4: Hide
-GuiON4 := 0
-}
-
-Else{
-Gui, 4: Show, NA
-GuiON4 := 1
-}
-return
-
 
 Exit:
 ; gdi+ may now be shutdown on exiting the program
