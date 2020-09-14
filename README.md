@@ -1,6 +1,10 @@
 ------------------------------------------------------------------------------------------------------------------
 pretty much just forked the script and edited to display the among us maps. you need to download all files and
-run overlay.ahk as an admin. use f1 - f3 to open the map you want to display. press the key again to disable it.
+run overlay.ahk as an admin. you have to have [autohotkey](https://www.autohotkey.com/) installed on your pc 
+in order to have the script work.
+
+
+use f1 - f3 to open the map you want to display. press the key again to disable it.
 
 the images for the maps are from [fandom wiki](https://among-us-wiki.fandom.com/wiki/Category:Maps)
 and are distributed under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/3.0/)
