@@ -20,5 +20,5 @@ ZiggyD  for the Fossil Location Chart.
 
 ------------------------------------------------------------------------------------------------------------------
 
-the images from the maps are from [fandom wiki] (https://among-us-wiki.fandom.com/wiki/Category:Maps)
+the images for the maps are from [fandom wiki] (https://among-us-wiki.fandom.com/wiki/Category:Maps)
 and are distributed under [CC-BY-SA] (https://creativecommons.org/licenses/by-sa/3.0/)
