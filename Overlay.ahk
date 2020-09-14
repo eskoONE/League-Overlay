@@ -28,8 +28,9 @@ If !pToken := Gdip_Startup()
 OnExit, Exit
 
 global image1 := "polus.png"
-global image2 := "theskeld.png"
+global image2 := "theskelt.png"
 global image3 := "mirahq.png"
+global image4 := "filler.png"
 global GuiOn1 := 0
 global GuiOn2 := 0
 global GuiOn3 := 0
@@ -168,6 +169,19 @@ Gui, 3: Show, NA
 GuiON3 := 1
 }
 return
+
+f12::
+If (GuiON4 = 1) {
+Gui, 4: Hide
+GuiON4 := 0
+}
+
+Else{
+Gui, 4: Show, NA
+GuiON4 := 1
+}
+return
+
 
 Exit:
 ; gdi+ may now be shutdown on exiting the program
